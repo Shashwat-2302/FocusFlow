@@ -142,24 +142,6 @@ footer {
   margin-top: auto;
 }
 
-@media (max-width: 768px) {
-  .cards {
-    width: 90%;
-  }
-
-  .templates {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .nav-bar {
-    flex-direction: column;
-  }
-
-  .nav-bar a {
-    margin: 5px 0;
-  }
-}
 #template{
   background-image: url(bgSectionOne.jpg);
   background-repeat: no-repeat;
@@ -168,16 +150,14 @@ footer {
   padding: 50px;
   z-index: 0;
 }
-#about-us{
+#about-us {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 50px;
-  left: 23%;
-  margin-bottom: 100px;
+  margin: 50px auto 100px;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
+  max-width: 600px;
   height: 300px;
   border: 2px solid wheat;
   box-shadow: 10px 10px 10px rgb(252, 170, 170);
@@ -192,6 +172,7 @@ footer {
   overflow: hidden;
   transition: transform 0.2s;
 }
+
 #about-us::before{
   content: '';
   position: absolute;
@@ -237,7 +218,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.484);
   border-radius: 20px;
   padding: 20px;
-  width: 45%;
+  width: 100%;
+  max-width: 450px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   text-align: left;
   transition: transform 0.2s;
@@ -279,3 +261,36 @@ footer {
 }
 
 /* Add more overrides to make your light theme complete */
+
+@media (max-width: 768px) {
+  .cards {
+    width: 90%;
+  }
+
+  .templates {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar a {
+    margin: 5px 0;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crrntoffer, .futroffer {
+    width: 90%;
+  }
+
+  #about-us {
+    width: 90%;
+    left: 0;
+  }
+}
