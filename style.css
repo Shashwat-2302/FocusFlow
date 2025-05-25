@@ -20,6 +20,9 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  background-attachment: fixed;
+  background-size: cover;
+  backface-visibility: hidden;
 }
 
 /* Navigation bar */
@@ -170,7 +173,10 @@ footer {
   padding: 50px;
   z-index: 0;
   overflow: hidden;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease, color 0.2s ease;
+  background-attachment: fixed;
+  background-size: cover;
+  backface-visibility: hidden;
 }
 
 #about-us::before{
@@ -202,6 +208,9 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  backface-visibility: hidden;
 }
 
 .services-container {
