@@ -11,16 +11,14 @@ body, html {
 
 /* Parallax background */
 .parallax-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url('pexels-cottonbro-9665184.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: -1;
 }
 
@@ -162,3 +160,122 @@ footer {
     margin: 5px 0;
   }
 }
+#template{
+  background-image: url(bgSectionOne.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  z-index: 0;
+}
+#about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+  left: 23%;
+  margin-bottom: 100px;
+  flex-direction: column;
+  width: 50%;
+  height: 300px;
+  border: 2px solid wheat;
+  box-shadow: 10px 10px 10px rgb(252, 170, 170);
+  border-radius: 50px;
+  color: white;
+  background-image: url(aboutusbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px;
+  z-index: 0;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+#about-us::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.387); /* light overlay */
+  z-index: 1;
+  border-radius: 50px;
+}
+#about-us h3{
+  margin: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+#about-us:hover{
+  transform: scale(1.1);
+  color: aqua;
+}
+#services {
+  color: black;
+  padding: 50px;
+  background-image: url(servicesbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1000px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.crrntoffer, .futroffer {
+  background-color: rgba(255, 255, 255, 0.484);
+  border-radius: 20px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: left;
+  transition: transform 0.2s;
+}
+.crrntoffer:hover{
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+.futroffer:hover{
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/*------------------------------------------------------------*/
+
+/* Light Theme Overrides */
+.light-theme {
+  background-color: #6f603665; /* light background */
+  color: #333; /* dark text */
+}
+
+.light-theme .nav-bar {
+  background-color: #7a737389;
+}
+
+.light-theme .cards {
+  background: #ffffff48;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.light-theme .parallax-bg {
+  background-image: url('pexels-cottonbro-light.jpg'); /* a light version of your bg image */
+}
+
+.light-theme footer {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Add more overrides to make your light theme complete */
